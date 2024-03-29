@@ -1,9 +1,10 @@
 {
     "manifest_version": 1,
-    "name": "JapaneseFonts",
-    "version": "1.0.3",
-    "author": "Mutton_String",
-    "description": "替换日文歌字体为日文字体",
+    "name": "Moe-Furigana",
+    "version": "1.0.4",
+    "author": "晓空&Mutton_String",
+    "description": "给日文歌词的汉字标注假名",
+    "preview": "preview.jpg",
     "betterncm_version": ">=1.0.0",
     "ncm3-compatible": true,
     "injects": {
