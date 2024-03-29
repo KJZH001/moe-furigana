@@ -285,6 +285,7 @@ function fix(text) {
  * @returns {string[]} 处理后的文本
  */
 function process(result, isAcc) {
+    result = result.result;//json转回字符串
     result = result.replace(/<rp>.<\/rp>/g, ''); // 删去rp标签，节约空间
     result = result.replace(/<rt>[^ぁ-ヿ]<\/rt>/g, '<rt></rt>'); // 简体中文独有汉字会把本字注音上去，删除
     result = result.replace(/<ruby>([㐀-鿿々0-9０-９]+?)<\/ruby>/g, '<ruby>$1<rt></rt></ruby>'); // 统一格式，让无注音的汉字的ruby标签内也有rt标签
