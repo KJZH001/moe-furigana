@@ -382,7 +382,7 @@ function pronounce(lyricElem) {
     posted = true;
     date = Math.round(Date.now() / 3600000);
     console.log('Moe-Furigana: 请求翻译接口中.../Trying to fetch...');
-    fetch('http://localhost:3000/convert', {
+    fetch('http://localhost:34472/convert', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({
@@ -540,7 +540,7 @@ function pronouncePlus(lyricElem) {
     posted = true;
     date = Math.round(Date.now() / 3600000);
     console.log('Moe-Furigana: 请求翻译接口中.../Trying to fetch...');
-    fetch('http://localhost:3000/convert', {
+    fetch('http://localhost:34472/convert', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({
