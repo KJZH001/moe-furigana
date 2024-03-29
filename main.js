@@ -386,7 +386,7 @@ function pronounce(lyricElem) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({
-            text: str,
+            str: str,
             mode: 'furigana',
             to: 'hiragana',
             romajiSystem: 'hepburn'
@@ -544,7 +544,7 @@ function pronouncePlus(lyricElem) {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({
-            text: str,
+            str: str,
             mode: 'furigana',
             to: 'hiragana',
             romajiSystem: 'hepburn'
