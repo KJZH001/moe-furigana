@@ -381,8 +381,8 @@ function pronounce(lyricElem) {
 
     posted = true;
     date = Math.round(Date.now() / 3600000);
-    console.log('Furigana: Trying to fetch...');
-    fetch('https://convert-kuromoji-xhbfvqbgdc.cn-shenzhen.fcapp.run', {
+    console.log('Moe-Furigana: 请求翻译接口中.../Trying to fetch...');
+    fetch('http://localhost:34472/convert', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({
@@ -392,7 +392,7 @@ function pronounce(lyricElem) {
             romajiSystem: 'hepburn'
         })
     }).then(resp => {
-        console.log('Furigana: Response received.');
+        console.log('Moe-Furigana: 请求获取成功/Response received.');
         if (resp.ok) return resp.json();
         else {
             error(`响应出错，错误代码：${resp.status}`);
@@ -538,8 +538,8 @@ function pronouncePlus(lyricElem) {
 
     posted = true;
     date = Math.round(Date.now() / 3600000);
-    console.log('Furigana: Trying to fetch...');
-    fetch('https://convert-kuromoji-xhbfvqbgdc.cn-shenzhen.fcapp.run', {
+    console.log('Moe-Furigana: 请求翻译接口中.../Trying to fetch...');
+    fetch('http://localhost:34472/convert', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },
         body: JSON.stringify({
@@ -552,7 +552,7 @@ function pronouncePlus(lyricElem) {
         console.log('Furigana: Response received.');
         if (resp.ok) return resp.json();
         else {
-            error(`响应出错，错误代码：${resp.status}`);
+            console.log('Moe-Furigana: 请求获取成功/Response received.');
             posted = false;
         }
     }).then(result => {
