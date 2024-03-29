@@ -4,7 +4,7 @@
 
 遇到问题了可以反馈，但是我不一定会修，因为本插件是二次开发，不会考虑别人使用的情况
 
-上游分支：(MuttonString/Furigana)[https://github.com/MuttonString/Furigana] 现已存档且关闭ISSUE
+上游分支：[MuttonString/Furigana](https://github.com/MuttonString/Furigana) 现已存档且关闭ISSUE
 
 Version 1.0.3及之前是上游版本的更新日志，修改后的更新从1.0.4开始
 
